@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyFocus - One Goal at a Time</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DailyFocus</h1>
+            <p class="tagline">One goal. One day. Full focus.</p>
+        </header>
+
+        <main>
+            <div class="date-display">
+                <span id="current-date"></span>
+            </div>
+
+            <div class="goal-section">
+                <h2>Today's Focus</h2>
+                <div class="goal-input-container">
+                    <input type="text" id="goal-input" placeholder="What's your main goal for today?" maxlength="100">
+                    <button id="save-goal">Set Goal</button>
+                </div>
+            </div>
+
+            <div class="current-goal" id="current-goal-display">
+                <h3>Your goal for today:</h3>
+                <p id="goal-text">No goal set yet</p>
+                <div class="goal-status">
+                    <button id="complete-goal" class="hidden">Mark Complete</button>
+                    <span id="completion-status" class="hidden">✓ Completed!</span>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h3>Previous Goals</h3>
+                <div id="goals-history" class="goals-list">
+                    <!-- Goals history will be populated here -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Stay focused, achieve more. 🎯</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
